@@ -18,7 +18,7 @@ UnityDecoration {
   -UnityDecoration-title-alignment: 0.0;
 
   &.top {
-    border: 1px solid if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), transparentize(black, 0.9));
+    border: 1px solid if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), transparentize(#171C1D, 0.9));
     border-bottom-width: 0;
     border-radius: 4px 4px 0 0;
     padding: 1px 6px 0 6px;
@@ -37,14 +37,14 @@ UnityDecoration {
   &.left, &.right, &.bottom,
   &.left:backdrop, &.right:backdrop, &.bottom:backdrop {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), transparentize(black, 0.9)));
+    background-image: linear-gradient(to bottom, if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), transparentize(#171C1D, 0.9)));
   }
 }
 
 // Panel Style
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #2f343f);
+  background-image: linear-gradient(to bottom, #171C1D);
   color: lighten($panel_fg, 20%);
   box-shadow: none;
 
@@ -62,7 +62,7 @@ UnityPanelWidget,
 // Unity Greeter
 .lightdm.menu {
   background-image: none;
-  background-color: transparentize(black, 0.6);
+  background-color: transparentize(#171C1D, 0.6);
   border-color: transparentize(white, 0.2);
   border-radius: 4px;
   padding: 1px;
@@ -85,7 +85,7 @@ UnityPanelWidget,
 .lightdm.menubar {
   color: transparentize(white, 0.2);
   background-image: none;
-  background-color: transparentize(black, 0.5);
+  background-color: transparentize(#171C1D, 0.5);
 
   & > .menuitem {
     padding: 2px 6px;
@@ -99,7 +99,7 @@ UnityPanelWidget,
 .lightdm.button,
 .lightdm.entry {
   background-image: none;
-  background-color: transparentize(black, 0.7);
+  background-color: transparentize(#171C1D, 0.7);
   border-color: transparentize(white, 0.6);
   border-radius: 10px;
   padding: 7px;
@@ -147,7 +147,7 @@ UnityPanelWidget,
   border-width: 0;
 
   &.selected {
-    background-color: transparentize(black, 0.3);
+    background-color: transparentize(#171C1D, 0.3);
     border-width: 1px;
   }
 }

@@ -136,8 +136,8 @@ StScrollBar {
 
 .separator {
   -gradient-height: 1px;
-  -gradient-start: rgba(0,0,0,0);
-  -gradient-end: rgba(0,0,0,0);
+  -gradient-start: #1D2828;
+  -gradient-end: #1D2828;
   -margin-horizontal: 1.5em;
   height: 1em;
 }
@@ -149,9 +149,9 @@ StScrollBar {
 .slider {
   -slider-height: 4px;
   -slider-background-color: $button_border;                   //background of the trough
-  -slider-border-color: transparentize(black, 1);             //trough border color
+  -slider-border-color: transparentize(#171C1D, 1);             //trough border color
   -slider-active-background-color: $selected_bg_color;        //active trough fill
-  -slider-active-border-color: transparentize(black, 1);      //active trough border
+  -slider-active-border-color: transparentize(#171C1D, 1);      //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 4px;
   height: 18px;
@@ -162,7 +162,7 @@ StScrollBar {
   color: transparent;
 
   .popup-menu-item:active & {
-    -slider-background-color: transparentize(black, 0.8);
+    -slider-background-color: transparentize(#171C1D, 0.8);
     -slider-active-background-color: $selected_fg_color;
   }
 }
@@ -318,9 +318,9 @@ StScrollBar {
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 3px;
-  -arrow-background-color:  rgba(0,0,0,0.0);
+  -arrow-background-color:  #1D2828;
   -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0,0,0,0.0);
+  -arrow-border-color: #1D2828;
   -arrow-base: 0;
   -arrow-rise: 0;
 }
@@ -509,7 +509,7 @@ StScrollBar {
 
   &#active {
     border: 4px solid $selected_bg_color;
-    background-color: black;
+    background-color: #171C1D;
     border-radius: 2px;
   }
 }
@@ -542,7 +542,7 @@ StScrollBar {
       transition-duration: 100;
     }
   }
-  &-overview-background-shade { background-color: rgba(0,0,0,0.5); }
+  &-overview-background-shade { background-color: #1D2828; }
 }
 
 .workspace-close-button,
@@ -573,7 +573,7 @@ StScrollBar {
 //}
 //
 //.window-close:rtl {
-//  -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+//  -st-background-image-shadow: 2px 2px 6px #1D2828;
 //}
 
 .window-close-area {
@@ -859,11 +859,11 @@ StScrollBar {
 }
 
 .switcher-arrow {
-  border-color: rgba(0,0,0,0);
+  border-color: #1D2828;
   color: $osd_fg_color;
 
   &:highlighted {
-    border-color: rgba(0,0,0,0);
+    border-color: #1D2828;
     color: $_shell_fg_color;
   }
 }
@@ -1050,7 +1050,7 @@ StScrollBar {
   background-color: $osd_bg_color;
   border-width: 0;
   border-top-width: 1px;
-  border-color: transparentize(black, 0.6);
+  border-color: transparentize(#171C1D, 0.6);
 }
 
 .keyboard-layout {
@@ -1084,7 +1084,7 @@ StScrollBar {
   -arrow-border-radius: 2px;
   -arrow-background-color: $osd_bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(black, 0.6);;
+  -arrow-border-color: transparentize(#171C1D, 0.6);;
   -arrow-base: 20px;
   -arrow-rise: 10px;
   -boxpointer-gap: 5px;
@@ -1108,7 +1108,7 @@ StScrollBar {
 
   &-favorites-button {
     padding: 10px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #1D2828;
 
     &:hover { @extend %button:hover; }
   }
@@ -1131,7 +1131,7 @@ StScrollBar {
 
   &-application-button {
     padding: 7px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #1D2828;
 
     // This style is used in menu application buttons for applications which were newly installed
     &:highlighted { font-weight: bold; }
@@ -1149,7 +1149,7 @@ StScrollBar {
 
   &-category-button {
     padding: 7px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #1D2828;
 
     &-selected {
       padding: 7px;
@@ -1162,7 +1162,7 @@ StScrollBar {
     &-greyed {
       padding: 7px;
       color: $insensitive_fg_color;
-      border: 1px solid rgba(0,0,0,0);
+      border: 1px solid #1D2828;
     }
 
     &-label:ltr { padding-left: 5px; }
@@ -1241,7 +1241,7 @@ StScrollBar {
   .level {
     padding: 0;
     height: 4px;
-    background-color: transparentize(black, 0.5);
+    background-color: transparentize(#171C1D, 0.5);
     border-radius: 2px;
     color: $selected_bg_color;
   }
@@ -1383,7 +1383,7 @@ StScrollBar {
   }
 
   &-generic-coverart {
-    background: rgba(0,0,0,0.2);
+    background: #1D2828;
   }
 
   &-overlay {
@@ -1421,9 +1421,9 @@ StScrollBar {
     border: none;
     -slider-height: 0.5em;
     -slider-background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
-    -slider-border-color: rgba(0,0,0,0);
+    -slider-border-color: #1D2828;
     -slider-active-background-color: $selected_bg_color;
-    -slider-active-border-color: rgba(0,0,0,0);
+    -slider-active-border-color: #1D2828;
     -slider-border-width: 0px;
     -slider-handle-radius: 0px;
   }
@@ -1462,9 +1462,9 @@ StScrollBar {
 }
 
 .workspace-graph .workspace {
-  border: 1px solid transparentize(black, 0.6);
+  border: 1px solid transparentize(#171C1D, 0.6);
   background-gradient-direction: none;
-  background-color: transparentize(black, 0.8);
+  background-color: transparentize(#171C1D, 0.8);
 }
 
 .workspace-graph .workspace:active {
@@ -1656,7 +1656,7 @@ StScrollBar {
 /*FIXME*/
 .workspace-osd {
   /*color: red;*/
-  text-shadow: black 5px 5px 5px;
+  text-shadow: #171C1D 5px 5px 5px;
   font-weight: bold;
   font-size: 48pt;
 }
@@ -1683,6 +1683,6 @@ StScrollBar {
 .xkcd-box {
   padding: 6px;
   border: 0px;
-  background-color: rgba(0,0,0,0);
+  background-color: #1D2828;
   border-radius: 0px;
 }

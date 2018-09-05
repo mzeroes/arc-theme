@@ -139,9 +139,9 @@ StScrollBar {
 .slider {
   -slider-height: 4px;
   -slider-background-color: $button_border;                   //background of the trough
-  -slider-border-color: transparentize(black, 1);             //trough border color
+  -slider-border-color: transparentize(#171C1D, 1);             //trough border color
   -slider-active-background-color: $selected_bg_color;        //active trough fill
-  -slider-active-border-color: transparentize(black, 1);      //active trough border
+  -slider-active-border-color: transparentize(#171C1D, 1);      //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 0px;
   height: 18px;
@@ -151,7 +151,7 @@ StScrollBar {
   color: transparent;
 
   .popup-menu-item.selected & {
-    -slider-background-color: transparentize(black, 0.8);
+    -slider-background-color: transparentize(#171C1D, 0.8);
     -slider-active-background-color: $selected_fg_color;
   }
 }
@@ -207,7 +207,7 @@ StScrollBar {
 // Modal Dialogs
 //
 .headline { font-size: 110%; }
-.lightbox { background-color: black; }
+.lightbox { background-color: #171C1D; }
 .flashspot { background-color: white; }
 
 .modal-dialog {
@@ -471,7 +471,7 @@ StScrollBar {
 }
 
 .hidden {
-  color: transparentize(black, 1);
+  color: transparentize(#171C1D, 1);
 }
 
 //
@@ -574,9 +574,9 @@ StScrollBar {
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 2px;
-  -arrow-background-color:  rgba(0,0,0,0.0);
+  -arrow-background-color:  #1D2828;
   -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0,0,0,0.0);
+  -arrow-border-color: #1D2828;
   -arrow-base: 0;
   -arrow-rise: 0;
 }
@@ -585,7 +585,7 @@ StScrollBar {
   -arrow-border-radius: 2px;
   -arrow-background-color: $osd_bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(black, 0.6);
+  -arrow-border-color: transparentize(#171C1D, 0.6);
   -arrow-base: 5;
   -arrow-rise: 5;
 }
@@ -630,7 +630,7 @@ StScrollBar {
   .level {
     padding: 0;
     height: 4px;
-    background-color: transparentize(black, 0.5);
+    background-color: transparentize(#171C1D, 0.5);
     border-radius: 2px;
     color: $selected_bg_color;
   }
@@ -696,7 +696,7 @@ StScrollBar {
 }
 
 .switcher-arrow {
-  border-color: rgba(0,0,0,0);
+  border-color: #1D2828;
   color: $osd_fg_color;
 
   &:highlighted {
@@ -749,8 +749,8 @@ StScrollBar {
 
 .ws-switcher-box {
   height: 96px;
-  background-color: transparentize(black, 0.67);
-  border-color: transparentize(black, 0.67);
+  background-color: transparentize(#171C1D, 0.67);
+  border-color: transparentize(#171C1D, 0.67);
   border-radius: 2px;
 }
 
@@ -806,12 +806,12 @@ StScrollBar {
 
   .panel-corner {
     -panel-corner-radius: $panel-corner-radius;
-    -panel-corner-background-color: transparentize(black, 1);
+    -panel-corner-background-color: transparentize(#171C1D, 1);
     -panel-corner-border-width: 0px;
-    -panel-corner-border-color: black;
+    -panel-corner-border-color: #171C1D;
 
     &:active, &:overview, &:focus {
-      -panel-corner-border-color: black;
+      -panel-corner-border-color: #171C1D;
     }
 
     &.lock-screen, &.login-screen, &unlock-screen {
@@ -839,7 +839,7 @@ StScrollBar {
 
     &:hover {
       color: $_panel_fg_color;
-      background-color: transparentize(black, 0.83);
+      background-color: transparentize(#171C1D, 0.83);
       border-bottom-width: 1px;
       border-color: transparent;
     }
@@ -849,7 +849,7 @@ StScrollBar {
       background-color: $selected_bg_color;
       box-shadow: none;
       border-bottom-width: 1px;
-      border-color: black;
+      border-color: #171C1D;
 
       & > .system-status-icon { icon-shadow: none; }
     }
@@ -1074,11 +1074,11 @@ StScrollBar {
   margin: 2px;
   border-radius: 12.5px;
 
-  &:hover, &:focus { background-color: transparentize(black, 0.9); }
+  &:hover, &:focus { background-color: transparentize(#171C1D, 0.9); }
 
   &:active {
     color: $fg_color;
-    background-color: transparentize(black, 0.85);
+    background-color: transparentize(#171C1D, 0.85);
     border-width: 0; //avoid jumparound due to today
   }
 
@@ -1330,7 +1330,7 @@ StScrollBar {
 .window-caption, .window-caption:hover {
   spacing: 25px;
   color: $osd_fg_color;
-  background-color: transparentize(black, 0.3);
+  background-color: transparentize(#171C1D, 0.3);
   border-radius: 2px;
   padding: 4px 12px;
   -shell-caption-spacing: 12px;
@@ -1343,7 +1343,7 @@ StScrollBar {
   width: 320px;
   padding: 7px 9px;
   border-radius: 20px;
-  border: 1px solid transparentize(black, 0.75);
+  border: 1px solid transparentize(#171C1D, 0.75);
   background-color: transparentize($entry_bg, 0.1);
 
   &:focus {
@@ -1418,7 +1418,7 @@ StScrollBar {
   font-size: 1em;
   color: $osd_fg_color;
   background-color: $dark_sidebar_bg;
-  border-color: rgba(0,0,0,0.4);
+  border-color: #1D2828;
   padding: 4px 0;
   border-radius: 0 3px 3px 0;
 
@@ -1453,7 +1453,7 @@ StScrollBar {
   border-radius: 3px;
   padding: 4px 12px;
   color: $_shell_fg_color;
-  background-color: transparentize(black, 0.3);
+  background-color: transparentize(#171C1D, 0.3);
   text-align: center;
   -x-offset: 3px;
 
@@ -1506,13 +1506,13 @@ StScrollBar {
 .show-apps {
 
   .overview-icon {
-    background-color: transparentize(black, 0.5);
+    background-color: transparentize(#171C1D, 0.5);
     border-radius: 2px;
     border: 0px solid;
   }
 
   &:hover .overview-icon {
-    background-color: transparentize(black, 0.3);
+    background-color: transparentize(#171C1D, 0.3);
     color: $selected_bg_color;
   }
 
@@ -1877,7 +1877,7 @@ $legacy_icon_size: 24px;
   background-color: $osd_bg_color;
   border-width: 0;
   border-top-width: 1px;
-  border-color: transparentize(black, 0.8);
+  border-color: transparentize(#171C1D, 0.8);
 }
 
 .keyboard-layout {
@@ -1911,7 +1911,7 @@ $legacy_icon_size: 24px;
   -arrow-border-radius: 2px;
   -arrow-background-color: $osd_bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(black, 0.6);;
+  -arrow-border-color: transparentize(#171C1D, 0.6);;
   -arrow-base: 20px;
   -arrow-rise: 10px;
   -boxpointer-gap: 5px;
@@ -2085,12 +2085,12 @@ $legacy_icon_size: 24px;
   width: 80px;
   height: 48px;
   -arrow-thickness: 12px;
-  -arrow-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  -arrow-shadow: 0 1px 1px #1D2828;
 }
 
 .screen-shield-clock {
   color: white;
-  text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  text-shadow: 0px 1px 2px #1D2828;
   font-weight: bold;
   text-align: center;
   padding-bottom: 1.5em;
@@ -2098,7 +2098,7 @@ $legacy_icon_size: 24px;
 
 .screen-shield-clock-time {
   font-size: 72pt;
-  text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+  text-shadow: 0px 2px 2px #1D2828;
 }
 
 .screen-shield-clock-date { font-size: 28pt; }
@@ -2135,8 +2135,8 @@ $legacy_icon_size: 24px;
 #panel.lock-screen { background-color: transparentize($_bubble_bg_color, 0.5); }
 
 .screen-shield-background { //just the shadow, really
-  background: black;
-  box-shadow: 0px 2px 4px transparentize(black,0.6);
+  background: #171C1D;
+  box-shadow: 0px 2px 4px transparentize(#171C1D,0.6);
 }
 
 #lockDialogGroup {
@@ -2158,8 +2158,8 @@ $legacy_icon_size: 24px;
 #LookingGlassDialog {
   spacing: 4px;
   padding: 8px 8px 10px 8px;
-  background-color: transparentize(black, 0.3);
-  border: 1px solid black;
+  background-color: transparentize(#171C1D, 0.3);
+  border: 1px solid #171C1D;
   border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
   border-radius: 2px;
   color: $osd_fg_color;
@@ -2183,12 +2183,12 @@ $legacy_icon_size: 24px;
 
     &:hover {
       color: $_shell_fg_color;
-      text-shadow: black 0px 2px 2px;
+      text-shadow: #171C1D 0px 2px 2px;
     }
     &:selected {
       border-bottom-width: 0px;
       color: $selected_bg_color;
-      text-shadow: black 0px 2px 2px;
+      text-shadow: #171C1D 0px 2px 2px;
     }
   }
   StBoxLayout#EvalBox { padding: 4px; spacing: 4px; }
@@ -2223,7 +2223,7 @@ $legacy_icon_size: 24px;
   border: 1px solid gray;
   padding: 4px;
   border-radius: 4px;
-  &:hover { border: 1px solid #ffffff; }
+  &:hover { border: 1px solid #DBDBDB; }
 }
 
 #lookingGlassExtensions { padding: 4px; }
@@ -2249,7 +2249,7 @@ $legacy_icon_size: 24px;
 }
 
 #LookingGlassPropertyInspector {
-  background: transparentize(black, 0.3);
+  background: transparentize(#171C1D, 0.3);
   border: 1px solid grey;
   border-radius: 2px;
   padding: 6px;
