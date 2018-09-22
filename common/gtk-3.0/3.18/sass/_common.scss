@@ -2683,7 +2683,7 @@ GtkColorSwatch {
 
   // indicator and keynav outline colors, color-dark is a color with luminosity lower then 50%
   &.color-dark {
-    color: white;
+    color: #DBDBDB;
     outline-color: transparentize(#171C1D, 0.7);
   }
   &.color-light {

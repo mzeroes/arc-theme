@@ -36,7 +36,7 @@ terminal-window,
 }
 
 .nautilus-desktop.nautilus-canvas-item {
-  color: white;
+  color: #DBDBDB;
   text-shadow: 1px 1px transparentize(#171C1D, 0.4);
 
   &:active { color: $fg_color; }
@@ -658,7 +658,7 @@ panel-toplevel.background {
   }
 
   &:checked {
-    color: white;
+    color: #DBDBDB;
     background-color: transparentize(#171C1D, 0.75);
     box-shadow: inset 0 -2px $selected_bg_color;
   }
@@ -766,7 +766,7 @@ panel-toplevel.background {
 //
 .panel {
   background-color: transparent;
-  color: white;
+  color: #DBDBDB;
   font-weight: bold;
   text-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
   -gtk-icon-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
@@ -801,7 +801,7 @@ panel-toplevel.background {
 
 .composited-indicator {
   background-color: transparent;
-  color: white;
+  color: #DBDBDB;
   text-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
   -gtk-icon-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
 

@@ -8,7 +8,7 @@ $font-family: Futura Bk bt, sans, Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
-$_shell_fg_color: white;
+$_shell_fg_color: #DBDBDB;
 
 stage {
   font-family: $font-family;
@@ -437,7 +437,7 @@ StScrollBar {
     -natural-hpadding: 3px;
     -minimum-hpadding: 3px;
     font-weight: bold;
-    color: white;
+    color: #DBDBDB;
     height: 22px;
 
     &:hover {}
@@ -900,7 +900,7 @@ StScrollBar {
 // Modal dialogs
 //
 .lightbox { background-color: rgba(0, 0, 0, 0.4); }
-.flashspot { background-color: white; }
+.flashspot { background-color: #DBDBDB; }
 
 .modal-dialog {
   color: $fg_color;

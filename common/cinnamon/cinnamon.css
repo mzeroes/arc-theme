@@ -416,7 +416,7 @@ StScrollBar {
       background-gradient-end: rgba(0, 255, 0, 0.2); }
 
 .panel-top, .panel-bottom, .panel-left, .panel-right {
-  color: white;
+  color: #DBDBDB;
   font-size: 1em;
   padding: 0px; }
 
@@ -442,7 +442,7 @@ StScrollBar {
   -natural-hpadding: 3px;
   -minimum-hpadding: 3px;
   font-weight: bold;
-  color: white;
+  color: #DBDBDB;
   height: 22px; }
 
 .panel-button {
@@ -769,7 +769,7 @@ StScrollBar {
   color: #BAC3CF; }
   .switcher-arrow:highlighted {
     border-color: #1D2828;
-    color: white; }
+    color: #DBDBDB; }
 
 .thumbnail-scroll-gradient-left {
   background-color: transparent;
@@ -795,7 +795,7 @@ StScrollBar {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .flashspot {
-  background-color: white; }
+  background-color: #DBDBDB; }
 
 .modal-dialog {
   color: #171C1D;
@@ -1056,7 +1056,7 @@ StScrollBar {
   font-weight: bold;
   spacing: 1em;
   padding: 16px;
-  color: white;
+  color: #DBDBDB;
   border-image: url("common-assets/misc/osd.svg") 9 9 9 9; }
 
 .osd-window {
@@ -1067,7 +1067,7 @@ StScrollBar {
   margin: 32px;
   min-width: 64px;
   min-height: 64px;
-  color: white;
+  color: #DBDBDB;
   background: none;
   border: none;
   border-radius: 5px;
@@ -1106,11 +1106,11 @@ StScrollBar {
   padding-left: 8px;
   padding-right: 8px;
   transition-duration: 100;
-  color: rgba(255, 255, 255, 0.6); }
+  color: rgba(219, 219, 219, 0.6); }
   .window-list-item-box:hover {
-    color: white; }
+    color: #DBDBDB; }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus {
-    color: white; }
+    color: #DBDBDB; }
     .panel-bottom .window-list-item-box:active, .panel-bottom .window-list-item-box:checked, .panel-bottom .window-list-item-box:focus {
       border-image: url("common-assets/panel/window-list-active-bottom.svg") 3 3 1 3; }
     .panel-top .window-list-item-box:active, .panel-top .window-list-item-box:checked, .panel-top .window-list-item-box:focus {
@@ -1321,7 +1321,7 @@ StScrollBar {
 .applet-box {
   padding-left: 3px;
   padding-right: 3px;
-  color: white;
+  color: #DBDBDB;
   text-shadow: none;
   transition-duration: 100; }
   .applet-box.vertical {
@@ -1336,13 +1336,13 @@ StScrollBar {
 
 .applet-label {
   font-weight: bold;
-  color: white; }
+  color: #DBDBDB; }
   .applet-label:hover, .applet-box:hover > .applet-label {
     color: #DBDBDB;
     text-shadow: none; }
 
 .applet-icon {
-  color: white;
+  color: #DBDBDB;
   icon-size: 22px; }
   .applet-icon:hover, .applet-box:hover > .applet-icon {
     color: #DBDBDB;

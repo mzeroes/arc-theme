@@ -242,7 +242,7 @@ StScrollBar {
   background-color: #171C1D; }
 
 .flashspot {
-  background-color: white; }
+  background-color: #DBDBDB; }
 
 .modal-dialog {
   color: #DBDBDB;
@@ -327,15 +327,15 @@ StScrollBar {
     color: #e8e8e8;
     font-size: 8pt; }
   .end-session-dialog .modal-dialog-button:last-child {
-    color: white;
+    color: #DBDBDB;
     background-color: #F04A50;
     border-color: #F04A50; }
     .end-session-dialog .modal-dialog-button:last-child:hover {
-      color: white;
+      color: #DBDBDB;
       background-color: #f47479;
       border-color: #f47479; }
     .end-session-dialog .modal-dialog-button:last-child:active {
-      color: white;
+      color: #DBDBDB;
       background-color: #ee3239;
       border-color: #ee3239; }
 
@@ -535,7 +535,7 @@ StScrollBar {
   margin: 32px;
   min-width: 64px;
   min-height: 64px;
-  color: white;
+  color: #DBDBDB;
   background: none;
   border: none;
   border-radius: 5px;
@@ -594,7 +594,7 @@ StScrollBar {
   border-color: #1D2828;
   color: #BAC3CF; }
   .switcher-arrow:highlighted {
-    color: white; }
+    color: #DBDBDB; }
 
 .input-source-switcher-symbol {
   font-size: 34pt;
@@ -676,7 +676,7 @@ StScrollBar {
     -natural-hpadding: 10px !important;
     -minimum-hpadding: 6px !important;
     font-weight: bold;
-    color: white !important;
+    color: #DBDBDB !important;
     transition-duration: 100ms;
     border-bottom-width: 1px;
     border-color: transparent; }
@@ -686,7 +686,7 @@ StScrollBar {
       margin-left: 0px;
       margin-right: 0px; }
     #panel .panel-button:hover {
-      color: white !important;
+      color: #DBDBDB !important;
       background-color: rgba(23, 28, 29, 0.17);
       border-bottom-width: 1px;
       border-color: transparent;
@@ -1109,10 +1109,10 @@ StScrollBar {
 
 .list-search-result-title {
   font-size: 1.5em;
-  color: white; }
+  color: #DBDBDB; }
 
 .list-search-result-description {
-  color: #cccccc; }
+  color: #a8a8a8; }
 
 .search-provider-icon {
   padding: 15px; }
@@ -1157,7 +1157,7 @@ StScrollBar {
 .dash-label {
   border-radius: 3px;
   padding: 4px 12px;
-  color: white;
+  color: #DBDBDB;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   -x-offset: 3px; }
@@ -1363,7 +1363,7 @@ StScrollBar {
 .list-search-result, .app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
 .grid-search-result .overview-icon {
-  color: white;
+  color: #DBDBDB;
   border-radius: 2px;
   padding: 6px;
   border: 1px solid transparent;
@@ -1934,14 +1934,14 @@ StEntry.chat-response {
   padding-bottom: 3em; }
 
 .screen-shield-arrows Gjs_Arrow {
-  color: white;
+  color: #DBDBDB;
   width: 80px;
   height: 48px;
   -arrow-thickness: 12px;
   -arrow-shadow: 0 1px 1px #1D2828; }
 
 .screen-shield-clock {
-  color: white;
+  color: #DBDBDB;
   text-shadow: 0px 1px 2px #1D2828;
   font-weight: bold;
   text-align: center;
@@ -2021,7 +2021,7 @@ StEntry.chat-response {
     padding-left: .3em;
     padding-right: .3em; }
     #LookingGlassDialog .notebook-tab:hover {
-      color: white;
+      color: #DBDBDB;
       text-shadow: #171C1D 0px 2px 2px; }
     #LookingGlassDialog .notebook-tab:selected {
       border-bottom-width: 0px;
