@@ -4,7 +4,7 @@ stage {
   color: #DBDBDB; }
 
 .label-shadow {
-  color: transparent; }
+  color: #171C1F; }
 
 .menu #notification .notification-button, .menu #notification .notification-icon-button,
 .popup-menu #notification .notification-button,
@@ -772,14 +772,14 @@ StScrollBar {
     color: #DBDBDB; }
 
 .thumbnail-scroll-gradient-left {
-  background-color: transparent;
+  background-color: #171C1F;
   border-radius: 24px;
   border-radius-topright: 0px;
   border-radius-bottomright: 0px;
   width: 60px; }
 
 .thumbnail-scroll-gradient-right {
-  background-color: transparent;
+  background-color: #171C1F;
   border-radius: 24px;
   border-radius-topleft: 0px;
   border-radius-bottomleft: 0px;

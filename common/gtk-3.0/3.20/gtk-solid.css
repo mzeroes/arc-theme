@@ -200,13 +200,13 @@ entry {
     box-shadow: none; }
   .osd entry {
     color: #BAC3CF;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(27, 33, 37, 0.4); }
     .osd entry image, .osd entry image:hover {
       color: inherit; }
     .osd entry:focus {
       color: #DBDBDB;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: #1E2426; }
     .osd entry:disabled {
       color: rgba(186, 195, 207, 0.55);
@@ -330,28 +330,28 @@ button {
       color: #1E2426; }
     button.osd:active, button.osd:checked {
       color: #DBDBDB;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: #1E2426; }
     button.osd:disabled {
       color: #191e21;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: rgba(27, 33, 37, 0.25); }
   .osd button {
     color: #BAC3CF;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(27, 33, 37, 0.4); }
     .osd button:hover {
       color: #BAC3CF;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: rgba(43, 52, 57, 0.5); }
     .osd button:active, .osd button:checked {
       background-clip: padding-box;
       color: #DBDBDB;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: #1E2426; }
     .osd button:disabled {
       color: #191e21;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: rgba(27, 33, 37, 0.25); }
     .osd button.flat, .osd button.sidebar-button {
       border-color: transparent;
@@ -360,16 +360,16 @@ button {
       box-shadow: none; }
       .osd button.flat:hover, .osd button.sidebar-button:hover {
         color: #BAC3CF;
-        border-color: rgba(19, 23, 25, 0.4);
+        border-color: #242b2b;
         background-color: rgba(43, 52, 57, 0.5); }
       .osd button.flat:disabled, .osd button.sidebar-button:disabled {
         color: #191e21;
-        border-color: rgba(19, 23, 25, 0.4);
+        border-color: #242b2b;
         background-color: rgba(27, 33, 37, 0.25);
         background-image: none; }
       .osd button.flat:active, .osd button.sidebar-button:active, .osd button.flat:checked, .osd button.sidebar-button:checked {
         color: #DBDBDB;
-        border-color: rgba(19, 23, 25, 0.4);
+        border-color: #242b2b;
         background-color: #1E2426; }
   .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active):not(:only-child),
   .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active) + button:not(:checked):not(:active) {
@@ -808,7 +808,7 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
 
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
-  box-shadow: inset 1px 0 rgba(19, 23, 25, 0.4); }
+  box-shadow: inset 1px 0 #242b2b; }
 
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
@@ -816,7 +816,7 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
   box-shadow: none; }
 
 .osd spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: rgba(19, 23, 25, 0.4); }
+  border-left-color: #242b2b; }
 
 spinbutton.vertical button, spinbutton.vertical entry {
   padding-left: 4px;
@@ -1039,7 +1039,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
 
 .primary-toolbar entry, headerbar entry {
   color: rgba(20, 30, 32, 0.8);
-  border-color: rgba(20, 30, 32, 0.73);
+  border-color: #242b2b;
   background-color: rgba(219, 219, 219, 0.9); }
   .primary-toolbar entry image, headerbar entry image, .primary-toolbar entry image:hover, headerbar entry image:hover {
     color: inherit; }
@@ -1054,7 +1054,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
       color: #DBDBDB; }
   .primary-toolbar entry:disabled, headerbar entry:disabled {
     color: rgba(20, 30, 32, 0.35);
-    border-color: rgba(20, 30, 32, 0.73);
+    border-color: #242b2b;
     background-color: rgba(219, 219, 219, 0.75); }
   .primary-toolbar entry selection:focus, headerbar entry selection:focus {
     background-color: #DBDBDB;
@@ -1153,7 +1153,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
   box-shadow: inset 1px 0 rgba(20, 30, 32, 0.1); }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry, headerbar .linked:not(.vertical):not(.path-bar) > entry + entry {
-  border-left-color: rgba(20, 30, 32, 0.23); }
+  border-left-color: rgba(36, 43, 43, 0.5); }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry.error + entry, headerbar .linked:not(.vertical):not(.path-bar) > entry.error + entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > entry + entry.error, headerbar .linked:not(.vertical):not(.path-bar) > entry + entry.error {
   border-left-color: #FC4138; }
@@ -1289,7 +1289,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
 
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
   color: rgba(20, 30, 32, 0.8);
-  border-color: rgba(20, 30, 32, 0.73);
+  border-color: #242b2b;
   background-color: rgba(219, 219, 219, 0.9); }
   .primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image, .primary-toolbar combobox > .linked > button.combo image:hover, headerbar combobox > .linked > button.combo image:hover {
     color: inherit; }
@@ -1300,7 +1300,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
     box-shadow: none; }
   .primary-toolbar combobox > .linked > button.combo:disabled, headerbar combobox > .linked > button.combo:disabled {
     color: rgba(20, 30, 32, 0.35);
-    border-color: rgba(20, 30, 32, 0.73);
+    border-color: #242b2b;
     background-color: rgba(219, 219, 219, 0.75); }
 
 .primary-toolbar combobox > .linked > entry.combo:dir(ltr), headerbar combobox > .linked > entry.combo:dir(ltr) {
@@ -2465,22 +2465,22 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
     border: none; }
   .app-notification button {
     color: #BAC3CF;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(27, 33, 37, 0.4); }
     .app-notification button.flat, .app-notification button.sidebar-button {
       border-color: rgba(30, 36, 38, 0); }
     .app-notification button:hover {
       color: #BAC3CF;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: rgba(43, 52, 57, 0.5); }
     .app-notification button:active, .app-notification button:checked {
       color: #DBDBDB;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: #1E2426;
       background-clip: padding-box; }
     .app-notification button:disabled {
       color: #191e21;
-      border-color: rgba(19, 23, 25, 0.4);
+      border-color: #242b2b;
       background-color: rgba(27, 33, 37, 0.25); }
 
 expander arrow {
@@ -3575,7 +3575,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   padding-left: 4px;
   padding-right: 4px;
   color: rgba(20, 30, 32, 0.8);
-  border-color: rgba(20, 30, 32, 0.73);
+  border-color: #242b2b;
   background-color: rgba(219, 219, 219, 0.9); }
   .marlin-pathbar.pathbar image, .marlin-pathbar.pathbar image:hover {
     color: inherit; }
@@ -3585,7 +3585,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
     background-color: #1E2426; }
   .marlin-pathbar.pathbar:disabled {
     color: rgba(20, 30, 32, 0.35);
-    border-color: rgba(20, 30, 32, 0.73);
+    border-color: #242b2b;
     background-color: rgba(219, 219, 219, 0.75); }
   .marlin-pathbar.pathbar:active, .marlin-pathbar.pathbar:checked {
     color: #1E2426; }
@@ -3999,19 +3999,19 @@ GtkListBox .h4 {
 
 #buttonbox_frame button {
   color: #BAC3CF;
-  border-color: rgba(19, 23, 25, 0.4);
+  border-color: #242b2b;
   background-color: rgba(27, 33, 37, 0.4); }
   #buttonbox_frame button:hover {
     color: #BAC3CF;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(43, 52, 57, 0.5); }
   #buttonbox_frame button:active, #buttonbox_frame button:checked {
     color: #DBDBDB;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: #1E2426; }
   #buttonbox_frame button:disabled {
     color: #191e21;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(27, 33, 37, 0.25); }
 
 #login_window #user_combobox {
@@ -4106,7 +4106,7 @@ filechooser placessidebar.sidebar,
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover {
         color: #BAC3CF;
-        border-color: rgba(19, 23, 25, 0.4);
+        border-color: #242b2b;
         background-color: rgba(43, 52, 57, 0.5); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active {
@@ -4214,30 +4214,30 @@ filechooser actionbar {
 
 filechooser actionbar button {
   color: #BAC3CF;
-  border-color: rgba(19, 23, 25, 0.4);
+  border-color: #242b2b;
   background-color: rgba(27, 33, 37, 0.4); }
   .caja-side-pane > box button:hover:not(:active), filechooser actionbar button:hover {
     color: #BAC3CF;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(43, 52, 57, 0.5); }
   filechooser actionbar button:active, filechooser actionbar button:checked {
     color: #DBDBDB;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: #1E2426; }
   filechooser actionbar button:disabled {
     color: #191e21;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: rgba(27, 33, 37, 0.25); }
 
 filechooser actionbar entry {
   color: #BAC3CF;
-  border-color: rgba(19, 23, 25, 0.4);
+  border-color: #242b2b;
   background-color: rgba(27, 33, 37, 0.4); }
   filechooser actionbar entry image, filechooser actionbar entry image:hover {
     color: inherit; }
   filechooser actionbar entry:focus {
     color: #DBDBDB;
-    border-color: rgba(19, 23, 25, 0.4);
+    border-color: #242b2b;
     background-color: #1E2426; }
   filechooser actionbar entry:disabled {
     color: rgba(186, 195, 207, 0.55);
