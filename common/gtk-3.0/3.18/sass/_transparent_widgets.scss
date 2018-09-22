@@ -261,12 +261,12 @@ GeditWindow.background.csd GeditFileBrowserView.view {
 
   &.overlay-indicator:not(.dragging):not(.hovering) .slider {
     background-color: lighten($dark_sidebar_fg, 15%);
-    border: 1px solid transparentize(#171C1D, 0.7);
+    border: 1px solid transparentize(#171C1F, 0.7);
   }
 
   // trough coloring
   .trough {
-    background-color: transparentize(#171C1D, 0.8);
+    background-color: transparentize(#171C1F, 0.8);
     border: none;
   }
 

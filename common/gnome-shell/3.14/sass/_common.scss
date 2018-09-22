@@ -166,9 +166,9 @@ StScrollBar {
 .slider {
   -slider-height: 4px;
   -slider-background-color: $button_border;                   //background of the trough
-  -slider-border-color: transparentize(#171C1D, 1);             //trough border color
+  -slider-border-color: transparentize(#171C1F, 1);             //trough border color
   -slider-active-background-color: $selected_bg_color;        //active trough fill
-  -slider-active-border-color: transparentize(#171C1D, 1);      //active trough border
+  -slider-active-border-color: transparentize(#171C1F, 1);      //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 0px;
   -slider-handle-border-color: transparent;
@@ -180,7 +180,7 @@ StScrollBar {
   color: transparent;
 
   .popup-menu-item:active & {
-    -slider-background-color: transparentize(#171C1D, 0.8);
+    -slider-background-color: transparentize(#171C1F, 0.8);
     -slider-active-background-color: $selected_fg_color;
   }
 }
@@ -236,7 +236,7 @@ StScrollBar {
 // Modal Dialogs
 //
 .headline { font-size: 110%; }
-.lightbox { background-color: #171C1D; }
+.lightbox { background-color: #171C1F; }
 .flashspot { background-color: #DBDBDB; }
 
 .modal-dialog {
@@ -503,7 +503,7 @@ StScrollBar {
 }
 
 .hidden {
-  color: transparentize(#171C1D, 1);
+  color: transparentize(#171C1F, 1);
 }
 
 //
@@ -627,7 +627,7 @@ StScrollBar {
   -arrow-border-radius: 2px;
   -arrow-background-color: $osd_bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(#171C1D, 0.6);
+  -arrow-border-color: transparentize(#171C1F, 0.6);
   -arrow-base: 5;
   -arrow-rise: 5;
 }
@@ -674,7 +674,7 @@ StScrollBar {
   .level {
     padding: 0;
     height: 4px;
-    background-color: transparentize(#171C1D, 0.5);
+    background-color: transparentize(#171C1F, 0.5);
     border-radius: 2px;
     color: $selected_bg_color;
   }
@@ -794,8 +794,8 @@ StScrollBar {
 
 .ws-switcher-box {
   height: 96px;
-  background: transparentize(#171C1D, 0.67);
-  border: 1px solid transparentize(#171C1D, 0.67);
+  background: transparentize(#171C1F, 0.67);
+  border: 1px solid transparentize(#171C1F, 0.67);
   border-radius: 2px;
 }
 
@@ -851,12 +851,12 @@ StScrollBar {
 
   .panel-corner {
     -panel-corner-radius: $panel-corner-radius;
-    -panel-corner-background-color: transparentize(#171C1D, 1);
+    -panel-corner-background-color: transparentize(#171C1F, 1);
     -panel-corner-border-width: 0px;
-    -panel-corner-border-color: #171C1D;
+    -panel-corner-border-color: #171C1F;
 
     &:active, &:overview, &:focus {
-      -panel-corner-border-color: #171C1D;
+      -panel-corner-border-color: #171C1F;
     }
 
     &.lock-screen, &.login-screen, &unlock-screen {
@@ -884,7 +884,7 @@ StScrollBar {
 
     &:hover {
       color: $_panel_fg_color !important;
-      background-color: transparentize(#171C1D, 0.83);
+      background-color: transparentize(#171C1F, 0.83);
       border-bottom-width: 1px;
       border-color: transparent;
       text-shadow: 0 0 #1D2828;
@@ -896,7 +896,7 @@ StScrollBar {
       border-image: none;
       box-shadow: none;
       border-bottom-width: 1px !important;
-      border-color: #171C1D;
+      border-color: #171C1F;
       text-shadow: 0 0 #1D2828;
 
       & > .system-status-icon { icon-shadow: none; }
@@ -959,7 +959,7 @@ StScrollBar {
 
 .system-switch-user-submenu-icon {
   icon-size: 24px;
-  border: 1px solid transparentize(#171C1D, 0.8);
+  border: 1px solid transparentize(#171C1F, 0.8);
 }
 
 #appMenu {
@@ -1094,13 +1094,13 @@ StScrollBar {
   color: $fg_color !important;
 
   &:hover, &:focus {
-    background-color: transparentize(#171C1D, 0.9) !important;
+    background-color: transparentize(#171C1F, 0.9) !important;
     color: $fg_color !important;
   }
 
   &:active {
     color: $fg_color !important;
-    background-color: transparentize(#171C1D, 0.85) !important;
+    background-color: transparentize(#171C1F, 0.85) !important;
     border-width: 0; //avoid jumparound due to today
   }
 
@@ -1337,7 +1337,7 @@ StScrollBar {
 .window-caption, .window-caption:hover {
   spacing: 25px;
   color: $osd_fg_color;
-  background-color: transparentize(#171C1D, 0.3);
+  background-color: transparentize(#171C1F, 0.3);
   border-radius: 2px;
   padding: 4px 12px;
   -shell-caption-spacing: 12px;
@@ -1350,7 +1350,7 @@ StScrollBar {
   width: 320px;
   padding: 7px 9px;
   border-radius: 20px;
-  border: 1px solid transparentize(#171C1D, 0.75);
+  border: 1px solid transparentize(#171C1F, 0.75);
   background-color: transparentize($entry_bg, 0.1);
 
   &:focus {
@@ -1705,7 +1705,7 @@ StScrollBar {
     @extend %reset_style;
     background: none !important;
 
-    text-shadow: #171C1D 0px 0px;
+    text-shadow: #171C1F 0px 0px;
     border-image: url("common-assets/dash/button-running-bottom.svg") 5 5 5 5;
   }
   &:hover > .overview-icon {
@@ -1846,7 +1846,7 @@ StScrollBar {
   background: opacify($osd_bg_color, 1);
   background-repeat: repeat;
   height: 72px;
-  border: solid transparentize(#171C1D, 0.4);
+  border: solid transparentize(#171C1F, 0.4);
   border-width: 0;
   border-top-width: 1px;
 }
@@ -2119,7 +2119,7 @@ StEntry.chat-response {
   background-color: $osd_bg_color;
   border-width: 0;
   border-top-width: 1px;
-  border-color: transparentize(#171C1D, 0.8);
+  border-color: transparentize(#171C1F, 0.8);
 }
 
 .keyboard-layout {
@@ -2154,7 +2154,7 @@ StEntry.chat-response {
   -arrow-border-radius: 2px;
   -arrow-background-color: $osd_bg_color;
   -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(#171C1D, 0.6);;
+  -arrow-border-color: transparentize(#171C1F, 0.6);;
   -arrow-base: 20px;
   -arrow-rise: 10px;
   -boxpointer-gap: 5px;
@@ -2378,8 +2378,8 @@ StEntry.chat-response {
 #panel.lock-screen { background-color: transparentize($_bubble_bg_color, 0.5); }
 
 .screen-shield-background { //just the shadow, really
-  background: #171C1D;
-  box-shadow: 0px 2px 4px transparentize(#171C1D,0.6);
+  background: #171C1F;
+  box-shadow: 0px 2px 4px transparentize(#171C1F,0.6);
 }
 
 #lockDialogGroup {
@@ -2401,8 +2401,8 @@ StEntry.chat-response {
 #LookingGlassDialog {
   spacing: 4px;
   padding: 8px 8px 10px 8px;
-  background-color: transparentize(#171C1D, 0.3);
-  border: 1px solid #171C1D;
+  background-color: transparentize(#171C1F, 0.3);
+  border: 1px solid #171C1F;
   border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
   border-radius: 2px;
   color: $osd_fg_color;
@@ -2426,12 +2426,12 @@ StEntry.chat-response {
 
     &:hover {
       color: $_shell_fg_color;
-      text-shadow: #171C1D 0px 2px 2px;
+      text-shadow: #171C1F 0px 2px 2px;
     }
     &:selected {
       border-bottom-width: 0px;
       color: $selected_bg_color;
-      text-shadow: #171C1D 0px 2px 2px;
+      text-shadow: #171C1F 0px 2px 2px;
     }
   }
   StBoxLayout#EvalBox { padding: 4px; spacing: 4px; }
@@ -2492,7 +2492,7 @@ StEntry.chat-response {
 }
 
 #LookingGlassPropertyInspector {
-  background: transparentize(#171C1D, 0.3);
+  background: transparentize(#171C1F, 0.3);
   border: 1px solid grey;
   border-radius: 2px;
   padding: 6px;

@@ -894,7 +894,7 @@ GtkComboBox {
   background-color: $bg_color;
   .osd &, &.osd {
     padding: 7px;
-    border: 1px solid transparentize(#171C1D, 0.5);
+    border: 1px solid transparentize(#171C1F, 0.5);
     border-radius: 3px;
     background-color: transparentize($osd_bg_color, 0.1);
   }
@@ -1355,7 +1355,7 @@ GtkTreeView.view {                                      // treeview grid lines a
   -GtkTreeView-expander-size: 16;
 
   border-left-color: transparentize($fg_color, 0.85);   // this is actually the tree lines color,
-  border-top-color: transparentize(#171C1D, 0.9);         // while this is the grid lines color, better then nothing
+  border-top-color: transparentize(#171C1F, 0.9);         // while this is the grid lines color, better then nothing
 
   &.rubberband { @extend .rubberband; }                 // to avoid borders being overridden by the previously set props
 
@@ -1415,7 +1415,7 @@ GtkTreeView.view {                                      // treeview grid lines a
 
     &:selected, &:selected:focus {
       color: $selected_fg_color;
-      background-image: linear-gradient(to bottom, transparentize(#171C1D, 0.8));
+      background-image: linear-gradient(to bottom, transparentize(#171C1F, 0.8));
       border-radius: 3px;
       border-width: 0;
     }
@@ -1467,10 +1467,10 @@ column-header.button.dnd { // for treeview-like derive widgets
   border-style: none solid none none;
   border-radius: 0;
   border-image: linear-gradient(to bottom,
-                                transparentize(if($variant == 'light', #171C1D, white), 1) 20%,
-                                transparentize(if($variant == 'light', #171C1D, white), 0.89) 20%,
-                                transparentize(if($variant == 'light', #171C1D, white), 0.89) 80%,
-                                transparentize(if($variant == 'light', #171C1D, white), 1) 80%) 0 1 0 0 / 0 1px 0 0 stretch;
+                                transparentize(if($variant == 'light', #171C1F, white), 1) 20%,
+                                transparentize(if($variant == 'light', #171C1F, white), 0.89) 20%,
+                                transparentize(if($variant == 'light', #171C1F, white), 0.89) 80%,
+                                transparentize(if($variant == 'light', #171C1F, white), 1) 80%) 0 1 0 0 / 0 1px 0 0 stretch;
 
   &:active, &:hover { background-color: $base_color; }
   &:active:hover { color: $fg_color; }
@@ -1568,7 +1568,7 @@ column-header.button.dnd { // for treeview-like derive widgets
   background-clip: border-box;
   background-color: if($variant=='light', $base_color, $bg_color);
 
-  box-shadow: 0 2px 6px 1px if($variant=='light', transparentize(#171C1D, 0.93), transparentize(#171C1D, 0.65));
+  box-shadow: 0 2px 6px 1px if($variant=='light', transparentize(#171C1F, 0.93), transparentize(#171C1F, 0.65));
 
   & .separator { color: transparentize($base_color, 1); }
   .label.separator { @extend .label.separator; } // Noice
@@ -1786,7 +1786,7 @@ $_scrollbar_bg_color: darken($base_color, 1%);
       .slider {
         margin: 0;
         background-color: mix($fg_color, $bg_color, 70%);
-        border: 1px solid if($variant == 'light', transparentize(white, 0.4), transparentize(#171C1D, 0.7));
+        border: 1px solid if($variant == 'light', transparentize(white, 0.4), transparentize(#171C1F, 0.7));
         background-clip: padding-box;
       }
 
@@ -2101,14 +2101,14 @@ GtkCheckButton.text-button, GtkRadioButton.text-button {
     .menu .menuitem:hover &,
     .list-row:selected &,
     GtkInfoBar & {
-      background-image: linear-gradient(to bottom, transparentize(#171C1D, 0.8));
+      background-image: linear-gradient(to bottom, transparentize(#171C1F, 0.8));
 
       &.highlight {
         background-image: linear-gradient(to bottom, $selected_fg_color);
 
         &:insensitive { background-image: linear-gradient(to bottom, mix($selected_fg_color, $selected_bg_color, 55%)); }
       }
-      &:insensitive { background-image: linear-gradient(to bottom, transparentize(#171C1D, 0.9)); }
+      &:insensitive { background-image: linear-gradient(to bottom, transparentize(#171C1F, 0.9)); }
     }
   }
 }
@@ -2160,7 +2160,7 @@ GtkProgressBar.trough {
     box-shadow: none;
   }
   .list-row:selected &,
-  GtkInfoBar & { background-color: transparentize(#171C1D, 0.8); }
+  GtkInfoBar & { background-color: transparentize(#171C1F, 0.8); }
 }
 
 //
@@ -2233,7 +2233,7 @@ GtkScrolledWindow {
 .separator {
   // always disable separators
   // -GtkWidget-wide-separators: true;
-  color: transparentize(#171C1D, 0.9);
+  color: transparentize(#171C1F, 0.9);
 
   // Font and File button separators
   GtkFileChooserButton &,
@@ -2261,14 +2261,14 @@ GtkScrolledWindow {
 .list-row.activatable {
   // let's take care of background colors
   &:hover {
-    background-color: if($variant == 'light', transparentize(#171C1D, 0.95), transparentize(white, 0.97));
+    background-color: if($variant == 'light', transparentize(#171C1F, 0.95), transparentize(white, 0.97));
   }
   &:active {
     color: $fg_color;
   }
   &:selected {
     &:active { color: $selected_fg_color; }
-    &:hover { background-color: mix(#171C1D, $selected_bg_color, 10%); }
+    &:hover { background-color: mix(#171C1F, $selected_bg_color, 10%); }
     &:insensitive {
       color: transparentize($selected_fg_color, 0.3);
       background-color: transparentize($selected_bg_color, 0.3);
@@ -2684,18 +2684,18 @@ GtkColorSwatch {
   // indicator and keynav outline colors, color-dark is a color with luminosity lower then 50%
   &.color-dark {
     color: #DBDBDB;
-    outline-color: transparentize(#171C1D, 0.7);
+    outline-color: transparentize(#171C1F, 0.7);
   }
   &.color-light {
-    color: #171C1D;
+    color: #171C1F;
     outline-color: transparentize(white, 0.5);
   }
 
   // border color
   &.overlay,
   &.overlay:selected {
-    border: 1px solid transparentize(#171C1D, 0.85);
-    &:hover { border-color: transparentize(#171C1D, 0.75); }
+    border: 1px solid transparentize(#171C1F, 0.85);
+    &:hover { border-color: transparentize(#171C1F, 0.75); }
   }
 
   // make the add color button looks like, well, a button
@@ -2770,7 +2770,7 @@ GtkVolumeButton.button { padding: 8px; }
   border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
   border-width: 0px;
 
-  $_wm_border: if($variant=='light', transparentize(#171C1D, 0.9), transparentize(#171C1D, 0.45));
+  $_wm_border: if($variant=='light', transparentize(#171C1F, 0.9), transparentize(#171C1F, 0.45));
 
   box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), $_wm_border),
               0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
@@ -2792,7 +2792,7 @@ GtkVolumeButton.button { padding: 8px; }
   // server-side decorations as used by mutter
   &.ssd {
     border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
-    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(#171C1D, 0.35), $_wm_border);
+    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(#171C1F, 0.35), $_wm_border);
 
     &.maximized { border-radius: 0; }
   }

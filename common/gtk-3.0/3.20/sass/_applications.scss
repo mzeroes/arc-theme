@@ -37,7 +37,7 @@ terminal-window,
 
 .nautilus-desktop.nautilus-canvas-item {
   color: #DBDBDB;
-  text-shadow: 1px 1px transparentize(#171C1D, 0.4);
+  text-shadow: 1px 1px transparentize(#171C1F, 0.4);
 
   &:active { color: $fg_color; }
 
@@ -257,7 +257,7 @@ $disk_space_free: darken($bg_color, 3%);
 
 .gedit-map-frame {
   border {
-    @if $variant=='light' { border-color: transparentize(#171C1D, 0.7); }
+    @if $variant=='light' { border-color: transparentize(#171C1F, 0.7); }
     border-width: 0;
 
     &:dir(ltr) { border-left-width: 1px; }
@@ -514,7 +514,7 @@ button.documents-favorite:active:hover {
 //
 .tr-workarea undershoot,
 .tr-workarea overshoot {
-  border-color: transparent; // Remove #171C1D border on over- and undershoot
+  border-color: transparent; // Remove #171C1F border on over- and undershoot
 }
 
 //
@@ -617,7 +617,7 @@ panel-toplevel.background {
   }
 
   .wnck-pager {
-    color: mix($panel_fg, #171C1D, 50%);
+    color: mix($panel_fg, #171C1F, 50%);
     background-color: darken($panel_bg, 10%);
 
     &:hover {
@@ -654,12 +654,12 @@ panel-toplevel.background {
 
   &:hover {
     color: lighten($panel_fg, 10%);
-    background-color: transparentize(#171C1D, 0.83);
+    background-color: transparentize(#171C1F, 0.83);
   }
 
   &:checked {
     color: #DBDBDB;
-    background-color: transparentize(#171C1D, 0.75);
+    background-color: transparentize(#171C1F, 0.75);
     box-shadow: inset 0 -2px $selected_bg_color;
   }
 }
@@ -750,14 +750,14 @@ panel-toplevel.background {
 // Gala
 //
 .gala-notification {
-    border: 1px solid rgba(0, 0, 0, 0.35);
+    border: 1px solid #1E2426;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-image: _solid(white);
     background-color: transparent;
 
   .title, .label {
-    color: #171C1D;
+    color: #171C1F;
   }
 }
 
@@ -768,8 +768,8 @@ panel-toplevel.background {
   background-color: transparent;
   color: #DBDBDB;
   font-weight: bold;
-  text-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
-  -gtk-icon-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
+  text-shadow: 0 1px 2px transparentize(#171C1F, 0.4);
+  -gtk-icon-shadow: 0 1px 2px transparentize(#171C1F, 0.4);
 
   &-shadow {
     background-image: none;
@@ -786,9 +786,9 @@ panel-toplevel.background {
 
     .window-frame.menu.csd,
     .window-frame.popup.csd {
-      box-shadow: 0 0 0 1px transparentize(#171C1D, 0.8),
-                  0 10px 20px transparentize(#171C1D, 0.81),
-                  0 6px 6px transparentize(#171C1D, 0.77);
+      box-shadow: 0 0 0 1px transparentize(#171C1F, 0.8),
+                  0 10px 20px transparentize(#171C1F, 0.81),
+                  0 6px 6px transparentize(#171C1F, 0.77);
     }
   }
   .menubar > .menuitem {
@@ -802,8 +802,8 @@ panel-toplevel.background {
 .composited-indicator {
   background-color: transparent;
   color: #DBDBDB;
-  text-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
-  -gtk-icon-shadow: 0 1px 2px transparentize(#171C1D, 0.4);
+  text-shadow: 0 1px 2px transparentize(#171C1F, 0.4);
+  -gtk-icon-shadow: 0 1px 2px transparentize(#171C1F, 0.4);
 
   > GtkWidget > GtkWidget:first-child { padding: 0 2px; }
 
@@ -845,8 +845,8 @@ panel-toplevel.background {
 //    label, image { padding: 0 3px; }
 //
 //    &:hover, &:active {
-//      background-color: if($variant == 'light', transparentize(#171C1D, 0.96), transparentize(white, 0.95));
-//      border: solid if($variant == 'light', transparentize(#171C1D, 0.92), transparentize(white, 0.93));
+//      background-color: if($variant == 'light', transparentize(#171C1F, 0.96), transparentize(white, 0.95));
+//      border: solid if($variant == 'light', transparentize(#171C1F, 0.92), transparentize(white, 0.93));
 //      border-width: 1px 0;
 //    }
 //    *:disabled { color: $insensitive_fg_color; }
