@@ -132,7 +132,7 @@ $disk_space_free: darken($bg_color, 3%);
 
   // Rename entry
   .nemo-window-pane widget.entry {
-    border: 1px solid;
+    border: 1px solid #1E2426;
     border-radius: 3px;
 
     @include entry(focus);
@@ -230,7 +230,7 @@ $disk_space_free: darken($bg_color, 3%);
 
 .gedit-document-panel-dragged-row {
   border: 1px solid $borders_color;
-  background-color: darken($bg_color, 10%);
+  background-color: darken($bg_color, 1%);
   color: $fg_color;
 }
 
@@ -534,7 +534,7 @@ button.documents-favorite:active:hover {
   &, &.solid {
     color: lighten($osd_fg_color, 7%);
     background-color: $osd_bg_color;
-    border: 1px solid darken($osd_bg_color, 8%);
+    border: 1px solid darken($osd_bg_color, 1%);
     border-radius: 2px;
   }
 
@@ -579,7 +579,7 @@ gf-candidate-box {
 //
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid darken($osd_bg_color, 8%);
+  border: 1px solid darken($osd_bg_color, 1%);
 
   .progressbar {
     background-color: $selected_bg_color;
@@ -786,9 +786,9 @@ panel-toplevel.background {
 
     .window-frame.menu.csd,
     .window-frame.popup.csd {
-      box-shadow: 0 0 0 1px transparentize(#171C1F, 0.8),
-                  0 10px 20px transparentize(#171C1F, 0.81),
-                  0 6px 6px transparentize(#171C1F, 0.77);
+      box-shadow: 0 0 0 1px transparentize(#1E2426, 0.8),
+                  0 10px 20px transparentize(#1E2426, 0.81),
+                  0 6px 6px transparentize(#1E2426, 0.77);
     }
   }
   .menubar > .menuitem {
@@ -867,3 +867,15 @@ panel-toplevel.background {
 //SwitchboardCategoryView .view:selected:focus {
 //  color: $fg_color;
 //}
+
+
+.window-frame, .window-frame:backdrop {
+box-shadow: 0 0 0 #1E2426;
+border-style: none;
+margin: 0;
+border-radius: 0;
+}
+
+.titlebar {
+border-radius: 0;
+}

@@ -3103,7 +3103,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   background-color: #DBDBDB; }
 
 .nemo-window .nemo-window-pane widget.entry {
-  border: 1px solid;
+  border: 1px solid #1E2426;
   border-radius: 3px;
   color: #171C1F;
   border-color: #1E2426;
@@ -3191,7 +3191,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 
 .gedit-document-panel-dragged-row {
   border: 1px solid #f2f3f5;
-  background-color: #d9dde0;
+  background-color: #f2f3f5;
   color: #171C1F; }
 
 .gedit-side-panel-paned statusbar {
@@ -3419,7 +3419,7 @@ button.documents-favorite:active:hover {
 #gf-candidate-popup.solid {
   color: #cfd5de;
   background-color: #171C1F;
-  border: 1px solid #060708;
+  border: 1px solid #15191c;
   border-radius: 2px; }
 
 #gf-bubble levelbar block.low, #gf-bubble levelbar block.high, #gf-bubble levelbar block.full,
@@ -3465,7 +3465,7 @@ gf-candidate-box:hover, gf-candidate-box:selected {
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid #060708; }
+  border: 1px solid #15191c; }
   MsdOsdWindow.background.osd .progressbar {
     background-color: #1E2426;
     border: none;
@@ -3616,7 +3616,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
       -gtk-icon-shadow: none; }
     .panel .menu .window-frame.menu.csd,
     .panel .menu .window-frame.popup.csd {
-      box-shadow: 0 0 0 1px rgba(23, 28, 31, 0.2), 0 10px 20px rgba(23, 28, 31, 0.19), 0 6px 6px rgba(23, 28, 31, 0.23); }
+      box-shadow: 0 0 0 1px rgba(30, 36, 38, 0.2), 0 10px 20px rgba(30, 36, 38, 0.19), 0 6px 6px rgba(30, 36, 38, 0.23); }
   .panel .menubar > .menuitem {
     padding: 3px 6px; }
     .panel .menubar > .menuitem:hover {
@@ -3647,6 +3647,15 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .menu .spinner {
   opacity: 1; }
 
+.window-frame, .window-frame:backdrop {
+  box-shadow: 0 0 0 #1E2426;
+  border-style: none;
+  margin: 0;
+  border-radius: 0; }
+
+.titlebar {
+  border-radius: 0; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
@@ -3662,7 +3671,7 @@ UnityDecoration {
   -UnityDecoration-title-fade: 35px;
   -UnityDecoration-title-alignment: 0.0; }
   UnityDecoration .top {
-    border: 1px solid rgba(23, 28, 31, 0.1);
+    border: 1px solid rgba(30, 36, 38, 0.1);
     border-bottom-width: 0;
     border-radius: 4px 4px 0 0;
     padding: 1px 6px 0 6px;
@@ -3899,12 +3908,12 @@ GraniteWidgetsPopOver {
   -GraniteWidgetsPopOver-border-radius: 2px;
   -GraniteWidgetsPopOver-border-width: 1;
   -GraniteWidgetsPopOver-shadow-size: 12;
-  border: 1px solid rgba(23, 28, 31, 0.3);
+  border: 1px solid rgba(30, 36, 38, 0.3);
   margin: 0; }
 
 .popover_bg {
   background-image: linear-gradient(to bottom, #DBDBDB, #DBDBDB);
-  border: 1px solid rgba(23, 28, 31, 0.3); }
+  border: 1px solid rgba(30, 36, 38, 0.3); }
 
 GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
 GraniteWidgetsPopOver * {
@@ -4249,7 +4258,7 @@ filechooser placessidebar.sidebar scrollbar,
   filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
   .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: #e7eaee;
-    border: 1px solid rgba(23, 28, 31, 0.3); }
+    border: 1px solid rgba(30, 36, 38, 0.3); }
   filechooser placessidebar.sidebar scrollbar slider,
   .nautilus-window placessidebar.sidebar scrollbar slider, .nemo-window .sidebar scrollbar slider, .caja-side-pane scrollbar slider {
     background-color: rgba(231, 234, 238, 0.7); }

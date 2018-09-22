@@ -102,7 +102,7 @@ $darker_asset_suffix: if($darker=='true', '-dark', $asset_suffix);
 }
 
 .rubberband {
-  border: 1px solid darken($selected_bg_color, 10%);
+  border: 1px solid darken($selected_bg_color, 0%);
   background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
 }
 
@@ -192,7 +192,7 @@ $vert_padding: 5px;
 // Text Entries
 //
 .entry {
-  border: 1px solid;
+  border: 1px solid #1E2426;
   padding: $vert_padding 8px;
 
   border-radius: 3px;
@@ -298,7 +298,7 @@ $_dot_color: $selected_bg_color;
   $_button_transition: all 200ms $ease-out-quad;
 
   transition: $_button_transition;
-  border: 1px solid;
+  border: 1px solid #1E2426;
   border-radius: 3px;
   padding: $vert_padding 8px;
 
@@ -894,7 +894,7 @@ GtkComboBox {
   background-color: $bg_color;
   .osd &, &.osd {
     padding: 7px;
-    border: 1px solid transparentize(#171C1F, 0.5);
+    border: 1px solid transparentize(#1E2426, 0.5);
     border-radius: 3px;
     background-color: transparentize($osd_bg_color, 0.1);
   }

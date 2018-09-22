@@ -197,7 +197,7 @@ filechooser {
 
   &.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: lighten($dark_sidebar_fg, 15%);
-    border: 1px solid transparentize(#171C1F, 0.7);
+    border: 1px solid transparentize(#1E2426, 0.7);
   }
   slider {
     background-color: transparentize(lighten($dark_sidebar_fg, 15%), 0.3);

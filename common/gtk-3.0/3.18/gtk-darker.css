@@ -60,7 +60,7 @@
       text-shadow: none; }
 
 .rubberband, GtkTreeView.view.rubberband, .content-view.rubberband {
-  border: 1px solid #08090a;
+  border: 1px solid #1e2426;
   background-color: rgba(8, 9, 10, 0.2); }
 
 .label.separator, .popover .label.separator, .sidebar .label.view.separator {
@@ -123,7 +123,7 @@ GtkTextView {
       opacity: 0.5; }
 
 .entry {
-  border: 1px solid;
+  border: 1px solid #1E2426;
   padding: 5px 8px;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -216,7 +216,7 @@ GtkSearchEntry.entry {
 
 .button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 1px solid;
+  border: 1px solid #1E2426;
   border-radius: 3px;
   padding: 5px 8px;
   color: #171C1F;
@@ -825,7 +825,7 @@ GtkComboBox {
   background-color: #F5F6F7; }
   .osd .toolbar, .osd .inline-toolbar, .toolbar.osd, .osd.inline-toolbar {
     padding: 7px;
-    border: 1px solid rgba(23, 28, 31, 0.5);
+    border: 1px solid rgba(30, 36, 38, 0.5);
     border-radius: 3px;
     background-color: rgba(23, 28, 31, 0.85); }
 
@@ -4078,11 +4078,3 @@ MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserW
 @define-color wm_icon_unfocused_bg #666A74;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #DBDBDB;
-.window-frame, .window-frame:backdrop {
-  box-shadow: 0 0 0 black;
-  border-style: none;
-  margin: 0;
-  border-radius: 0; }
-
-.titlebar {
-  border-radius: 0; }
