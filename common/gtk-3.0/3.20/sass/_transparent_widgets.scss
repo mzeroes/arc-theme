@@ -120,7 +120,7 @@ filechooser,
     &:hover:not(:active) { @extend %dark_sidebar_button:hover; }
   }
 
-  .frame { border-color: darken(opacify($dark_sidebar_bg, 1), 5%); }
+  .frame { border-color: darken(opacify($dark_sidebar_bg, 1), 0%); }
 
   scrollbar { @extend %dark_sidebar_scrollbar; }
   junction { background-color: darken($dark_sidebar_bg, 5%); }
@@ -131,7 +131,7 @@ filechooser {
   actionbar {
     color: $dark_sidebar_fg;
     background-color: $dark_sidebar_bg;
-    border-color: if($variant =='light', darken($dark_sidebar_bg, 7%), darken($dark_sidebar_bg, 15%));
+    border-color: if($variant =='light', darken($dark_sidebar_bg, 0%), darken($dark_sidebar_bg, 0%));
 
     button { @extend %dark_sidebar_button; }
     entry { @extend %dark_sidebar_entry; }
@@ -193,7 +193,7 @@ filechooser {
 
 %dark_sidebar_scrollbar {
 
-  border-color: darken($dark_sidebar_bg, 5%);
+  border-color: darken($dark_sidebar_bg, 1%);
 
   &.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: lighten($dark_sidebar_fg, 15%);

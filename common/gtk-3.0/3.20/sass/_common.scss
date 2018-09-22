@@ -24,7 +24,7 @@ $darker_asset_suffix: if($darker=='true', '-dark', $asset_suffix);
 
   // We use the outline properties to signal the focus properties
   outline-color: gtkalpha(currentColor, 0.3);
-  outline-style: dashed;
+  outline-style: none;
   outline-offset: -3px;
   outline-width: 1px;
   -gtk-outline-radius: 2px;
@@ -90,7 +90,7 @@ iconview { @extend .view; }
 
 rubberband,
 .rubberband {
-  border: 1px solid darken($selected_bg_color, 10%);
+  border: 1px solid darken($selected_bg_color, 0%);
   background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
 }
 
@@ -328,7 +328,7 @@ button {
   min-height: 22px;
   min-width: 20px;
   transition: $button_transition;
-  border: 1px solid;
+  border: 1px solid #171C1F;
   border-radius: 3px;
   padding: 2px 6px;
 
@@ -424,7 +424,7 @@ button {
   &.osd {
     color: $osd_fg_color;
     background-color: $osd_bg_color;
-    border-color: darken($osd_bg_color, 8%);
+    border-color: darken($osd_bg_color, 0%);
 
     &.image-button {
       padding: 0;
@@ -473,10 +473,10 @@ button {
         color: $b_color;
       }
       &:hover {
-        @include button(suggested_destructive, lighten($b_color, 10%), $b_fg);
+        @include button(suggested_destructive, lighten($b_color, 3%), $b_fg);
       }
       &:active, &:checked {
-        @include button(suggested_destructive, darken($b_color, 10%), $b_fg);
+        @include button(suggested_destructive, darken($b_color, 1%), $b_fg);
       }
       &.flat:disabled {
         @include button(undecorated);
@@ -934,7 +934,7 @@ toolbar {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-image: linear-gradient(to bottom, opacify($header_bg, 1),
-                                           darken($header_bg, 7%)) 1 0 1 0; //temporary hack for rhythmbox 3.1
+                                           darken($header_bg, 0%)) 1 0 1 0; //temporary hack for rhythmbox 3.1
 
   //&:backdrop { background-color: opacify($header_bg_backdrop, 1); }
 
@@ -1016,7 +1016,7 @@ headerbar,
   &.selection-mode {
     color: $selection_mode_fg;
     background-color: $selection_mode_bg;
-    border-color: darken($selection_mode_bg, 4%);
+    border-color: darken($selection_mode_bg, 1%);
     box-shadow: none;
 
     &:backdrop {
@@ -1672,15 +1672,15 @@ menu,
 
     &.top {
       margin-top: -6px;
-      border-bottom: 1px solid mix($fg_color, $base_color, 10%);
+      border-bottom: 1px solid mix($fg_color, $base_color, 0%);
       -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
     }
     &.bottom {
       margin-bottom: -6px;
-      border-top: 1px solid mix($fg_color, $base_color, 10%);
+      border-top: 1px solid mix($fg_color, $base_color, 0%);
       -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
     }
-    &:hover { background-color: mix($fg_color, $base_color, 10%); }
+    &:hover { background-color: mix($fg_color, $base_color, 0%); }
     &:disabled {
       color: transparent;
       background-color: transparent;
@@ -1696,13 +1696,13 @@ popover,
 popover.background {
   $_popover_bg: if($variant=='light', $base_color, $bg_color);
   padding: 2px;
-  border-radius: 3px;
+  border-radius: 1px;
   background-clip: border-box;
-  background-color: $_popover_bg;
+  background-color: $_poover_bg;
 
   box-shadow: 0 2px 6px 1px if($variant=='light', transparentize(#171C1F, 0.93), transparentize(#171C1F, 0.65));
 
-  .csd &, & { border: 1px solid darken($borders_color, 5%); }
+  .csd &, & { border: 1px solid darken($borders_color, 0%); }
 
   & separator { background-color: $_popover_bg; }
   label.separator { @extend label.separator; } // Noice
@@ -1869,7 +1869,7 @@ notebook {
 //
 // Scrollbars
 //
-$_scrollbar_bg_color: darken($base_color, 1%);
+$_scrollbar_bg_color:  $base_color;
 
 scrollbar {
   $_slider_min_length: 40px;
@@ -1909,9 +1909,9 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
-    background-color: mix($fg_color, $bg_color, 40%);
+    background-color: $selected_bg_color;
 
-    &:hover { background-color: mix($fg_color, $bg_color, 30%); }
+    &:hover { background-color: mix($fg_color, $selected_bg_color, 20%); }
 
     &:hover:active { background-color: $selected_bg_color;}
 
@@ -2184,7 +2184,7 @@ scale {
   }
 
   slider {
-    $_slider_border: if($variant=='light', transparentize(darken($button_border,25%), 0.5), darken($button_border,2%));
+    $_slider_border: if($variant=='light', transparentize(darken($button_border,0%), 0.5), darken($button_border,0%));
 
     background-color: $button_bg;
     border: 1px solid $_slider_border;
@@ -2241,7 +2241,7 @@ scale {
 
       &:active {
         background-color: darken($selected_bg_color, 10%);
-        border-color: darken($selected_bg_color, 10%);
+        border-color: darken($selected_bg_color, 1%);
       }
 
       &:disabled {  }
@@ -2498,7 +2498,7 @@ row {
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: darken($dark_sidebar_bg, 10%);
+  border-color: darken($dark_sidebar_bg, 0%);
 
   border { border: none; }
 
@@ -2572,7 +2572,7 @@ messagedialog { // Message Dialog styling
   .titlebar {
     min-height: 20px;
     background-color: $header_bg;
-    border-bottom: 1px solid darken($header_bg, 7%);
+    border-bottom: 1px solid darken($selected_bg_color, 0%);
   }
 
   .dialog-action-area button { padding: 8px; min-height: 0; }
@@ -3076,7 +3076,7 @@ decoration {
 
   $_wm_border: if($variant=='light', transparentize(#171C1F, 0.9), transparentize(#171C1F, 0.45));
 
-  box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), $_wm_border),
+  box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', darken($selected_bg_color, 0%), $_wm_border),
               0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
 
   // this is used for the resize cursor area
@@ -3085,7 +3085,7 @@ decoration {
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows
-    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(darken($header_bg, 7%), 0.1), $_wm_border),
+    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(darken($selected_bg_color, 0%), 0.1), $_wm_border),
                 0 8px 8px 0 transparent,
                 0 5px 5px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
 
@@ -3101,7 +3101,7 @@ decoration {
   }
   // server-side decorations as used by mutter
   .ssd & {
-    border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
+    border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 1px 1px 0 0);
     box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(#171C1F, 0.35), $_wm_border);
 
     &.maximized { border-radius: 0; }
@@ -3112,11 +3112,11 @@ decoration {
                 0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 10%));
   }
   tooltip.csd & {
-    border-radius: 2px;
+    border-radius: 1px;
     box-shadow: 0 1px 3px 1px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.3));
   }
   messagedialog.csd & {
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .solid-csd & {
     border-radius: 0;
