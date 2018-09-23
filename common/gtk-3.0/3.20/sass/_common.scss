@@ -3109,7 +3109,7 @@ decoration {
   .csd.popup & {
     border-radius: 2px;
     box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.1)),
-                0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 10%));
+                0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 0%));
   }
   tooltip.csd & {
     border-radius: 1px;
