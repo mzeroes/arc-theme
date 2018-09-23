@@ -131,7 +131,7 @@ filechooser {
   actionbar {
     color: $dark_sidebar_fg;
     background-color: $dark_sidebar_bg;
-    border-color: if($variant =='light', darken($dark_sidebar_bg, 0%), darken($dark_sidebar_bg, 0%));
+    border-color: if($variant =='light', darken($borders_color, 0%), darken($border-color, 0%));
 
     button { @extend %dark_sidebar_button; }
     entry { @extend %dark_sidebar_entry; }

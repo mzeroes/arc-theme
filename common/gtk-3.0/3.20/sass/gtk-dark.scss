@@ -11,3 +11,7 @@ $transparency: 'false';
 @import 'lightdm';
 @import 'transparent_widgets';
 @import 'colors-public';
+
+  .csd.popup decoration {
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(23, 28, 31, 0.45), 0 0 0 1px #1E2426 !important; }

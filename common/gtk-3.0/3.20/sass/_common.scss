@@ -91,7 +91,7 @@ iconview { @extend .view; }
 rubberband,
 .rubberband {
   border: 1px solid darken($selected_bg_color, 0%);
-  background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
+  background-color: transparentize(darken($selected_bg_color, 0%), 0.8);
 }
 
 flowbox {
@@ -99,7 +99,7 @@ flowbox {
 
   flowboxchild {
     padding: 3px;
-    border-radius: 2px;
+    border-radius: 1px;
 
     &:selected {
       @extend %selected_items;
@@ -470,7 +470,7 @@ button {
 
       &.flat {
         @include button(undecorated);
-        color: $b_color;
+        color: $selected_bg_color;
       }
       &:hover {
         @include button(suggested_destructive, lighten($b_color, 3%), $b_fg);
@@ -586,7 +586,7 @@ toolbar.inline-toolbar toolbutton {
 }
 
 // Some crazy linking stuff
-@mixin linking_rules($a:0.7, $var:$variant, $vert:'false', $entry_rules:'true', $button_rules:'true',
+@mixin linking_rules($a:0.0, $var:$variant, $vert:'false', $entry_rules:'true', $button_rules:'true',
                      $e_border:$entry_border, $b_border:$button_border) {
 
   $_border: if($vert=='false', left, top);
@@ -1016,7 +1016,7 @@ headerbar,
   &.selection-mode {
     color: $selection_mode_fg;
     background-color: $selection_mode_bg;
-    border-color: darken($selection_mode_bg, 1%);
+    border-color: darken($selection_mode_bg, 0.1%);
     box-shadow: none;
 
     &:backdrop {
@@ -1264,13 +1264,13 @@ headerbar {
 
       &.flat {
         @include button(undecorated);
-        color: $b_color;
+        color: $selected_bg_color;
       }
       &:hover {
         @include button(suggested_destructive, lighten($b_color, 10%), $b_fg);
       }
       &:active, &:checked {
-        @include button(suggested_destructive, darken($b_color, 10%), $b_fg);
+        @include button(suggested_destructive, darken($b_color, 1%), $b_fg);
       }
       &.flat:disabled,
       &:disabled { @include button(header-insensitive); }
@@ -1584,7 +1584,7 @@ menubar,
 
   > menuitem {
     padding: 4px 8px;
-    border: solid transparent;
+    border: solid none;
     border-width: 0;
 
     &:hover { //Seems like it :hover even with keyboard focus
@@ -1603,13 +1603,13 @@ menu,
   $_menu_bg: if($variant=='light', $base_color, $bg_color);
   margin: 4px;
   padding: 0;
-  border-radius: 0;
+  border-radius: 1;
   background-color: $_menu_bg;
   border: 1px solid $borders_color;
 
   .csd & {
     padding: 4px 0px;
-    border-radius: 2px;
+    border-radius: 1px;
     border: none;
   }
 
@@ -2127,7 +2127,7 @@ scale {
 
   // Trough
   trough {
-    $_scale_trough_bg: if($variant == 'light', $button_border, darken($bg_color, 5%));
+    $_scale_trough_bg: if($variant == 'light', $button_border, darken($bg_color, 0.1%));
 
     outline-offset: 2px;
     -gtk-outline-radius: 4.5px;
@@ -2241,7 +2241,7 @@ scale {
 
       &:active {
         background-color: darken($selected_bg_color, 10%);
-        border-color: darken($selected_bg_color, 1%);
+        border-color: darken($selected_bg_color, 0.1%);
       }
 
       &:disabled {  }
@@ -2327,7 +2327,7 @@ progressbar {
   trough {
     border: none;
     border-radius: 3px;
-    background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
+    background-color: if($variant == 'light', $button_border, darken($bg_color, 0.5%));
 
     row:selected &,
     infobar & { background-color: transparentize(#171C1F, 0.8); }
@@ -2351,7 +2351,7 @@ levelbar {
     border: none;
     padding: 3px;
     border-radius: 3px;
-    background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
+    background-color: if($variant == 'light', $button_border, darken($bg_color, 0.4%));
   }
 
   &.horizontal.discrete block { margin: 0 1px; }
@@ -2498,9 +2498,9 @@ row {
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: darken($dark_sidebar_bg, 0%);
+  border-color: $borders_color;
 
-  border { border: none; }
+  // border { border: none; }
 
   button {
     @include button(osd);
@@ -3074,7 +3074,7 @@ decoration {
   border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
   border-width: 0px;
 
-  $_wm_border: if($variant=='light', transparentize(#171C1F, 0.9), transparentize(#171C1F, 0.45));
+  $_wm_border: $selected_bg_color;
 
   box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', darken($selected_bg_color, 0%), $_wm_border),
               0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
@@ -3102,14 +3102,15 @@ decoration {
   // server-side decorations as used by mutter
   .ssd & {
     border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 1px 1px 0 0);
-    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(#171C1F, 0.35), $_wm_border);
+    // box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(#171C1F, 0.35), $_wm_border);
 
     &.maximized { border-radius: 0; }
   }
   .csd.popup & {
     border-radius: 2px;
-    box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.1)),
-                0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 0%));
+    border: 1px solid $selected_bg_color;
+    box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, $_wm_border),
+                0 0 0 1px if($variant == 'light', $_wm_border, $bg_color);
   }
   tooltip.csd & {
     border-radius: 1px;
