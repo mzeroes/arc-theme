@@ -378,13 +378,13 @@ button {
   button.suggested-action {
     background-clip: border-box;
     color: #DBDBDB;
-    background-color: #1E2828;
-    border-color: #1E2828; }
+    background-color: #314040;
+    border-color: #314040; }
     button.suggested-action.flat, button.suggested-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
-      color: #1E2828; }
+      color: #314040; }
     button.suggested-action:hover {
       background-clip: border-box;
       color: #DBDBDB;
@@ -1195,13 +1195,13 @@ window.csd > .titlebar:not(headerbar):backdrop {
 .primary-toolbar button.suggested-action, headerbar button.suggested-action {
   background-clip: border-box;
   color: #DBDBDB;
-  background-color: #1E2828;
-  border-color: #1E2828; }
+  background-color: #314040;
+  border-color: #314040; }
   .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat, .primary-toolbar button.suggested-action.sidebar-button, headerbar button.suggested-action.sidebar-button {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: #1E2828; }
+    color: #314040; }
   .primary-toolbar button.suggested-action:hover, headerbar button.suggested-action:hover {
     background-clip: border-box;
     color: #DBDBDB;
@@ -4037,8 +4037,8 @@ GtkListBox .h4 {
 #restart_button.button {
   background-clip: border-box;
   color: green;
-  background-color: #1E2828;
-  border-color: #1E2828; }
+  background-color: #314040;
+  border-color: #314040; }
   #restart_button.button:hover {
     background-clip: border-box;
     color: green;

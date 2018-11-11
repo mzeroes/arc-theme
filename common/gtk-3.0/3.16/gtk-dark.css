@@ -389,13 +389,13 @@ GtkSearchEntry.entry {
     background-clip: border-box;
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #1E2828;
-    border-color: #1E2828; }
+    background-color: #314040;
+    border-color: #314040; }
     .button.suggested-action.flat {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
-      color: #1E2828;
+      color: #314040;
       outline-color: rgba(30, 40, 40, 0.3); }
     .button.suggested-action:hover {
       background-clip: border-box;
@@ -1042,13 +1042,13 @@ GtkComboBox {
   background-clip: border-box;
   color: white;
   outline-color: rgba(255, 255, 255, 0.3);
-  background-color: #1E2828;
-  border-color: #1E2828; }
+  background-color: #314040;
+  border-color: #314040; }
   .primary-toolbar .button.suggested-action.flat, .header-bar .button.suggested-action.flat {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: #1E2828;
+    color: #314040;
     outline-color: rgba(30, 40, 40, 0.3); }
   .primary-toolbar .button.suggested-action:hover, .header-bar .button.suggested-action:hover {
     background-clip: border-box;
@@ -3513,8 +3513,8 @@ GtkListBox .h4 {
   background-clip: border-box;
   color: green;
   outline-color: rgba(0, 128, 0, 0.3);
-  background-color: #1E2828;
-  border-color: #1E2828; }
+  background-color: #314040;
+  border-color: #314040; }
   #restart_button.button:hover {
     background-clip: border-box;
     color: green;

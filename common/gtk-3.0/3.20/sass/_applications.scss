@@ -796,7 +796,7 @@ panel-toplevel.background {
     &:hover { background-color: transparent; }
   }
   .window-frame.menu.csd,
-  .window-frame.popup.csd { box-shadow: none !important; }
+  .window-frame.popup.csd { box-shadow: none }
 }
 
 .composited-indicator {
