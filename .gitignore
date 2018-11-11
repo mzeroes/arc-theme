@@ -10,3 +10,5 @@ configure
 install-sh
 missing
 .idea/
+package-lock.json
+.vscode/
